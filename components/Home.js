@@ -83,7 +83,8 @@ function Home() {
 
   // ***** Simple Method *****
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    // fetch("http://localhost:3000/movies")
+    fetch("https://backend-mymoviz5.vercel.app/movies")
       .then((res) => res.json())
       .then((data) => {
         setNewMovies(data.movies);
